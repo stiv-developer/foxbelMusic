@@ -1,0 +1,41 @@
+.card-grid {
+    display: grid;
+    /* grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr; */
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 3px;
+    padding-bottom: 130px;
+}
+
+.card-description .titulo,
+.autor {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img button {
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+    background: transparent;
+    color: #fff;
+    border: 0;
+}
+
+.card-description .titulo {
+    color: #555555;
+    font-weight: 700;
+}
+
+.card-description .autor {
+    color: #828282;
+}
+
+@media screen and (min-width: 767px) {
+    .card-grid {
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    }
+}

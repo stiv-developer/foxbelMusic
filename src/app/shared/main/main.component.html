@@ -1,0 +1,21 @@
+<div class="main">
+    <div class="wrapper">
+        <div class="form-group">
+            <div class="form-control">
+                <!-- <app-search></app-search> -->
+                <form (ngSubmit)="buscar()">
+                    <input type="text" id="search-bar" placeholder="Buscar" name="termino" [(ngModel)]="termino">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+            <div class="form-control">
+                <p><i class="fas fa-user"></i>Stiv R.</p>
+            </div>
+        </div>
+        <app-pages></app-pages>
+        <h3>Resultados</h3>
+        <div>
+            <app-card></app-card>
+        </div>
+    </div>
+</div>
